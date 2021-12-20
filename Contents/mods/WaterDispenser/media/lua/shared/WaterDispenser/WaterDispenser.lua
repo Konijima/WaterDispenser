@@ -105,7 +105,7 @@ function WaterDispenser:setAmount(amount)
     local modData = self.isoObject:getModData();
     modData.waterMax = 250;
     modData.waterAmount = amount;
-    self.isoObject:transmitModData();
+    if isServer() then self.isoObject:transmitModData(); end
 end
 
 function WaterDispenser:isTainted()
@@ -116,13 +116,13 @@ end
 function WaterDispenser:setTainted(isTainted)
     local modData = self.isoObject:getModData();
     modData.taintedWater = isTainted == true;
-    self.isoObject:transmitModData();
+    if isServer() then self.isoObject:transmitModData(); end
 end
 
 function WaterDispenser:transform(type)
     local objectInfo = WaterDispenser.GetObjectInfo(self.isoObject);
     self.isoObject:setSpriteFromName(WaterDispenser.ObjectTypes[type][objectInfo.facing]);
-    if isClient() then self.isoObject:transmitUpdatedSpriteToServer(); end
+    ---if isClient() then self.isoObject:transmitUpdatedSpriteToServer(); end
     if isServer() then self.isoObject:transmitUpdatedSpriteToClients(); end
 end
 

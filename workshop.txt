@@ -21,6 +21,5 @@ description=So I decided to not include all the feature such as Fuel etc... Will
 description=
 description=[h3]Github:[/h3]
 description=https://github.com/Konijima/WaterDispenser
-description=
 tags=Build 41;Food;Items;Misc;Models;Multiplayer;Realistic
 visibility=public

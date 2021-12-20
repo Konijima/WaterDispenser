@@ -27,15 +27,15 @@ end
 function PlaceWaterJugOnDispenser:perform()
     self.waterJug.item:setJobDelta(0.0);
 
-    local usedDelta = self.waterJug:getUsedDelta();
-    if usedDelta == 0 then
-        self.waterDispenser:transform("Empty");
-        self.waterDispenser:setAmount(0);
-    else
-        self.waterDispenser:transform("Water");
-        self.waterDispenser:setAmount(250 * usedDelta);
-        self.waterDispenser:setTainted(self.waterJug:isTainted());
-    end
+    local args = {
+        x = self.waterDispenser.isoObject:getX(),
+        y = self.waterDispenser.isoObject:getY(),
+        z = self.waterDispenser.isoObject:getZ(),
+        amount = 250 * self.waterJug:getUsedDelta(),
+        tainted = self.waterJug:isTainted()
+    };
+    sendClientCommand(self.character, 'WaterDispenser', 'PlaceBottle', args);
+
     self.waterJug:delete();
 
     ISBaseTimedAction.perform(self);

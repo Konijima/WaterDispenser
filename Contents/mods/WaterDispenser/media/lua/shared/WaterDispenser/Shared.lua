@@ -12,13 +12,3 @@ local function onLoadGridsquare( _square )
     end
 end
 Events.LoadGridsquare.Add(onLoadGridsquare);
-
-local function onWaterAmountChange(object, prevAmount)
-    local square = getCell():getGridSquare(object:getX(), object:getY(), object:getZ())
-    local dispenser = WaterDispenser.GetFromSquare(square);
-    if dispenser and dispenser:getAmount() < 1 then
-        dispenser:transform("Empty");
-        print("Dispenser should be empty!");
-    end
-end
-Events.OnWaterAmountChange.Add(onWaterAmountChange)

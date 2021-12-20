@@ -24,9 +24,13 @@ end
 function TakeWaterJugFromDispenser:perform()
     local waterJug = WaterJug.Create(self.waterDispenser:getAmount() / 250, self.waterDispenser:isTainted());
     self.inventory:addItem(waterJug.item);
-    self.waterDispenser:transform("None");
-    self.waterDispenser:setAmount(0);
-    self.waterDispenser:setTainted(false);
+
+    local args = {
+        x = self.waterDispenser.isoObject:getX(),
+        y = self.waterDispenser.isoObject:getY(),
+        z = self.waterDispenser.isoObject:getZ(),
+    };
+    sendClientCommand(self.character, 'WaterDispenser', 'TakeBottle', args);
 
     ISBaseTimedAction.perform(self);
 end
