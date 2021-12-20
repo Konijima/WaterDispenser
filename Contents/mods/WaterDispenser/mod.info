@@ -1,0 +1,9 @@
+name=Water Dispenser
+id=WaterDispenser
+description=Realistic Water Dispenser (Simplified Mod)
+author=Konijima
+icon=icon.png
+poster=poster.png
+modversion=1.0
+pack=water_dispenser
+tiledef=water_dispenser 866

@@ -1,0 +1,27 @@
+module Base {
+    model WaterJugEmpty
+    {
+        mesh = BigWaterBottle,
+        texture = WaterJugEmpty,
+    }
+
+    model WaterJugEmpty_Ground
+    {
+        mesh = WorldItems/BigWaterBottle,
+        texture = WaterJugEmpty,
+        scale = 0.01,
+    }
+
+    model WaterJugWaterFull
+    {
+        mesh = BigWaterBottle,
+        texture = WaterJugWaterFull,
+    }
+
+    model WaterJugWaterFull_Ground
+    {
+        mesh = WorldItems/BigWaterBottle,
+        texture = WaterJugWaterFull,
+        scale = 0.01,
+    }
+}

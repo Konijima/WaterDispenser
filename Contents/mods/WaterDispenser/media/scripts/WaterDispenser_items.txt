@@ -1,0 +1,42 @@
+module WaterDispenser {
+    imports {
+        Base,
+    }
+
+    item WaterJugEmpty
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 1,
+        CanStoreWater	    = TRUE,
+        Type	            = Normal,
+        DisplayName	        = Empty Water Jug,
+        Icon	            = WaterJugEmpty,
+        ReplaceOnUseOn      = WaterSource-WaterJugWaterFull,
+        SurvivalGear        = TRUE,
+        StaticModel         = WaterJugEmpty,
+        WorldStaticModel    = WaterJugEmpty_Ground,
+        ReplaceInSecondHand = Bag_WaterJugEmpty_LHand holdingbagleft,
+        ReplaceInPrimaryHand= Bag_WaterJugEmpty_RHand holdingbagright,
+    }
+
+    item WaterJugWaterFull
+    {
+        DisplayCategory     = Water,
+        IsWaterSource	    = TRUE,
+        Weight	            = 30,
+        CanStoreWater	    = TRUE,
+        Type	            = Drainable,
+        DisplayName	        = Water Jug with Water,
+        UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.004,
+        ReplaceOnDeplete	= WaterJugEmpty,
+        ReplaceOnUseOn	    = WaterSource-WaterJugWaterFull,
+        Icon	            = WaterJugWaterFull,
+        StaticModel         = WaterJugWaterFull,
+        WorldStaticModel    = WaterJugWaterFull_Ground,
+        ReplaceInSecondHand = Bag_WaterJugWaterFull_LHand holdingbagleft,
+        ReplaceInPrimaryHand= Bag_WaterJugWaterFull_RHand holdingbagright,
+        EatType             = Pot,
+    }
+
+}
