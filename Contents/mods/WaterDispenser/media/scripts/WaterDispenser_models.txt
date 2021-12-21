@@ -24,4 +24,17 @@ module Base {
         texture = WaterJugWaterFull,
         scale = 0.01,
     }
+
+    model WaterJugPetrolFull
+    {
+        mesh = BigWaterBottle,
+        texture = WaterJugPetrolFull,
+    }
+
+    model WaterJugPetrolFull_Ground
+    {
+        mesh = WorldItems/BigWaterBottle,
+        texture = WaterJugPetrolFull,
+        scale = 0.01,
+    }
 }

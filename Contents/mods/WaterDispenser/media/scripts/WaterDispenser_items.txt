@@ -17,6 +17,7 @@ module WaterDispenser {
         WorldStaticModel    = WaterJugEmpty_Ground,
         ReplaceInSecondHand = Bag_WaterJugEmpty_LHand holdingbagleft,
         ReplaceInPrimaryHand= Bag_WaterJugEmpty_RHand holdingbagright,
+        Tags                = CustomFuelContainer; Petrol_WaterDispenser_WaterJugPetrolFull,
     }
 
     item WaterJugWaterFull
@@ -37,6 +38,23 @@ module WaterDispenser {
         ReplaceInSecondHand = Bag_WaterJugWaterFull_LHand holdingbagleft,
         ReplaceInPrimaryHand= Bag_WaterJugWaterFull_RHand holdingbagright,
         EatType             = Pot,
+    }
+
+    item WaterJugPetrolFull
+    {
+        DisplayCategory     = VehicleMaintenance,
+        Weight	            = 30,
+        Type	            = Drainable,
+        DisplayName	        = Water Jug with Gas,
+        UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.004,
+        ReplaceOnDeplete	= WaterJugEmpty,
+        Icon	            = WaterJugPetrolFull,
+        StaticModel         = WaterJugPetrolFull,
+        WorldStaticModel    = WaterJugPetrolFull_Ground,
+        ReplaceInSecondHand = Bag_WaterJugPetrolFull_LHand holdingbagleft,
+        ReplaceInPrimaryHand= Bag_WaterJugPetrolFull_RHand holdingbagright,
+        Tags                = CustomFuelContainer; Empty_WaterDispenser_WaterJugEmpty,
     }
 
 }
