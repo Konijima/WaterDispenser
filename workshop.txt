@@ -1,23 +1,27 @@
 version=1
 id=2687798127
 title=Water Dispenser
-description=[h1]Incompatible with CocoLiquidOverhaul.[/h1]
-description=This is a complete re-write of CocoLiquidOverhaul but only for the water dispenser itself.
-description=Will probably not work with save-game that used CocoLiquidOverhaul.
+description=[h1]Incompatible with CocoLiquidOverhaul[/h1]
+description=Stop using CocoLiquidOverhaul, this mod is a cleaner version of it.
 description=
+description=[h2]Get Fuel API[/h2]
+description=Get FuelAPI mod to fill your WaterJug with fuel.
+description=[i]It is not required, but if FuelAPI is enabled it will work.[/i]
+description=
+description=[h2]Multiplayer[/h2]
+description=Tested and works in multiplayer.
+description=
+description=[h2]Features[/h2]
 description=In this mod I try to make everything [b]as Vanilla as possible[/b].
 description=- Dispenser have 250 unit of water as the vanilla.
 description=- Dispenser now automatically changed to custom one without player interaction.
 description=- Dispenser now start with random amount of water.
 description=- Time to take and place bottle depend on how full the jug is.
-description=- Everything is using vanilla functionality without re-writing anything.
 description=
-description=[h3]No code overwriting.[/h3]
-description=Very small code, using game events and should be working perfectly in multiplayer too.
-description=
-description=[h3]Notes:[/h3]
-description=I know CocoLiquidOverhaul have a lot of problems and it is old, I was just starting out (it's my first mod).
-description=So I decided to not include all the feature such as Fuel etc... Will probably dedicate an other mod to making custom fuel containers in the future.
+description=[h2]My Mods[/h2]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2688538916]FuelAPI[/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2687798127]WaterDispenser[/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2635550102]Computer[/url]
 description=
 description=[h3]Github:[/h3]
 description=https://github.com/Konijima/WaterDispenser
