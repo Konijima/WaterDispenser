@@ -37,9 +37,12 @@ function WaterDispenser.GetVanillaDispenserOnSquare(square)
         for i=1, objects:size()-1 do
             ---@type IsoObject
             local isoObject = objects:get(i);
-            local props = isoObject:getSprite():getProperties();
-            if props:Val("CustomName") == "Dispenser" and props:Val("GroupName") == "Water" then
-                return WaterDispenser:new(isoObject);
+            local sprite = isoObject:getSprite();
+            if sprite then
+                local props = sprite:getProperties();
+                if props:Val("CustomName") == "Dispenser" and props:Val("GroupName") == "Water" then
+                    return WaterDispenser:new(isoObject);
+                end
             end
         end
     end
@@ -48,16 +51,19 @@ end
 ---@param isoObject IsoObject
 function WaterDispenser.GetObjectInfo(isoObject)
     if isoObject then
-        local objectSpriteName = isoObject:getSprite():getName();
+        local sprite = isoObject:getSprite();
+        if sprite then
+            local objectSpriteName = sprite:getName();
 
-        for type, v in pairs(WaterDispenser.ObjectTypes) do
-            for facing, spriteName in pairs(v) do
-                if objectSpriteName == spriteName then
-                    return {
-                        type = type,
-                        facing = facing,
-                        sprite = spriteName
-                    }
+            for type, v in pairs(WaterDispenser.ObjectTypes) do
+                for facing, spriteName in pairs(v) do
+                    if objectSpriteName == spriteName then
+                        return {
+                            type = type,
+                            facing = facing,
+                            sprite = spriteName
+                        }
+                    end
                 end
             end
         end
