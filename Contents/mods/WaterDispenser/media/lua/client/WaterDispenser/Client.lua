@@ -41,11 +41,11 @@ local function OnPreFillWorldObjectContextMenu( _player, _context, _worldobjects
 
         --- Main Option Tooltip
         if playerObj:DistToSquared(waterDispenser.isoObject:getX() + 0.5, waterDispenser.isoObject:getY() + 0.5) < 2 * 2 then
-            local titleOption = _context:addOption("Water Dispenser");
+            local titleOption = _context:addOption(getText("ContextMenu_Water_Dispenser"));
             local tooltip = ISToolTip:new();
-            tooltip:setName("Water Dispenser");
-            local tx = getTextManager():MeasureStringX(tooltip.font, "Water" .. ":") + 20
-            tooltip.description = string.format("%s: <SETX:%d> %d / %d", "Water", tx, waterDispenser:getAmount(), 250);
+            tooltip:setName(getText("ContextMenu_Water_Dispenser"));
+            local tx = getTextManager():MeasureStringX(tooltip.font, getText("ContextMenu_WaterName") .. ":") + 20
+            tooltip.description = string.format("%s: <SETX:%d> %d / %d", getText("ContextMenu_WaterName"), tx, waterDispenser:getAmount(), 250);
             if waterDispenser:isTainted() then
                 tooltip.description = tooltip.description .. " <BR> <RGB:1,0.5,0.5> " .. getText("Tooltip_item_TaintedWater");
             end
@@ -55,11 +55,11 @@ local function OnPreFillWorldObjectContextMenu( _player, _context, _worldobjects
 
         --- Main Context Menu Options
         if objectInfo.type == "Water" or objectInfo.type == "Empty" then
-            _context:addOption("Take bottle from dispenser", playerObj, remove, waterDispenser);
+            _context:addOption(getText("ContextMenu_TakeBottleFromDispenser"), playerObj, remove, waterDispenser);
 
         elseif objectInfo.type == "None" then
             if playerWaterJugs:size() > 0 then
-                local option = _context:addOption("Place on dispenser");
+                local option = _context:addOption(getText("ContextMenu_PlaceOnDispenser"));
                 local subContext = ISContextMenu:getNew(_context);
                 _context:addSubMenu(option, subContext);
                 for i=0, playerWaterJugs:size()-1 do
@@ -67,8 +67,8 @@ local function OnPreFillWorldObjectContextMenu( _player, _context, _worldobjects
                     local waterJug = playerWaterJugs:get(i);
                     local subOption = subContext:addOption(waterJug.item:getName(), playerObj, insert, waterDispenser, waterJug);
                     local tooltip = ISToolTip:new();
-                    local tx = getTextManager():MeasureStringX(tooltip.font, "Water" .. ":") + 20
-                    tooltip.description = string.format("%s: <SETX:%d> %d / %d", "Water", tx, 250 * waterJug:getUsedDelta(), 250);
+                    local tx = getTextManager():MeasureStringX(tooltip.font, getText("ContextMenu_WaterName") .. ":") + 20
+                    tooltip.description = string.format("%s: <SETX:%d> %d / %d", getText("ContextMenu_WaterName"), tx, 250 * waterJug:getUsedDelta(), 250);
                     if waterJug:isTainted() then
                         tooltip.description = tooltip.description .. " <BR> <RGB:1,0.5,0.5> " .. getText("Tooltip_item_TaintedWater");
                     end
@@ -79,20 +79,20 @@ local function OnPreFillWorldObjectContextMenu( _player, _context, _worldobjects
         end
 
         --- DEBUG CONTEXT
-        if isDebugEnabled() then
-            local option = _context:addOption("[DEBUG] Water Dispenser");
-            local subContext = ISContextMenu:getNew(_context);
-            _context:addSubMenu(option, subContext);
-
-            subContext:addOption("Set sprite to none", waterDispenser, waterDispenser.transform, "None");
-            subContext:addOption("Set sprite to empty", waterDispenser, waterDispenser.transform, "Empty");
-            subContext:addOption("Set sprite to water", waterDispenser, waterDispenser.transform, "Water");
-            subContext:addOption("Set sprite to vanilla", waterDispenser, waterDispenser.transform, "Vanilla");
-            subContext:addOption("Set amount full", waterDispenser, waterDispenser.setAmount, 250);
-            subContext:addOption("Set amount empty", waterDispenser, waterDispenser.setAmount, 0);
-            subContext:addOption("Set clean", waterDispenser, waterDispenser.setTainted, false);
-            subContext:addOption("Set tainted", waterDispenser, waterDispenser.setTainted, true);
-        end
+        --if isDebugEnabled() then
+        --    local option = _context:addOption("[DEBUG] Water Dispenser");
+        --    local subContext = ISContextMenu:getNew(_context);
+        --    _context:addSubMenu(option, subContext);
+        --
+        --    subContext:addOption("Set sprite to none", waterDispenser, waterDispenser.transform, "None");
+        --    subContext:addOption("Set sprite to empty", waterDispenser, waterDispenser.transform, "Empty");
+        --    subContext:addOption("Set sprite to water", waterDispenser, waterDispenser.transform, "Water");
+        --    subContext:addOption("Set sprite to vanilla", waterDispenser, waterDispenser.transform, "Vanilla");
+        --    subContext:addOption("Set amount full", waterDispenser, waterDispenser.setAmount, 250);
+        --    subContext:addOption("Set amount empty", waterDispenser, waterDispenser.setAmount, 0);
+        --    subContext:addOption("Set clean", waterDispenser, waterDispenser.setTainted, false);
+        --    subContext:addOption("Set tainted", waterDispenser, waterDispenser.setTainted, true);
+        --end
     end
 
 end
