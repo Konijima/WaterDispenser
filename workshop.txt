@@ -18,6 +18,12 @@ description=- Dispenser now automatically changed to custom one without player i
 description=- Dispenser now start with random amount of water.
 description=- Time to take and place bottle depend on how full the jug is.
 description=
+description=[h2]Languages[/h2]
+description=- English (EN)
+description=- French (FR)
+description=- Spanish (ES)
+description=- Italian (IT)
+description=
 description=[h2]My Mods[/h2]
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2688538916]FuelAPI[/url]
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2687798127]WaterDispenser[/url]
