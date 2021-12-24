@@ -1,0 +1,4 @@
+Moveables_FR = {
+    Full_Water_Dispenser = "Distributeur d'eau",
+    Empty_Water_Dispenser = "Distributeur d'eau",
+}

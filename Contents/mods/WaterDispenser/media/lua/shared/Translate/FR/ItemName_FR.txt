@@ -1,0 +1,5 @@
+ItemName_FR = {
+    ItemName_WaterDispenser.WaterJugEmpty = "Cruche d'eau vide",
+    ItemName_WaterDispenser.WaterJugWaterFull = "Cruche d'eau avec de l'eau",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "Cruche d'eau avec du gaz",
+}
