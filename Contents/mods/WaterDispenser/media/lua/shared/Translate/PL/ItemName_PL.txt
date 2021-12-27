@@ -1,0 +1,5 @@
+ItemName_PL = {
+    ItemName_WaterDispenser.WaterJugEmpty = "Pusta butla",
+    ItemName_WaterDispenser.WaterJugWaterFull = "Butla z wod¹",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "Butla z paliwem",
+}
