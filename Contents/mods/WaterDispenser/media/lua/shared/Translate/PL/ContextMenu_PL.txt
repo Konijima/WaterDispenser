@@ -1,4 +1,4 @@
 ContextMenu_PL = {
-	ContextMenu_TakeBottleFromDispenser = "Zdejmij butlÄ™ z dystrybutora",
-	ContextMenu_PlaceOnDispenser = "WÅ‚Ã³Å¼ butlÄ™ na dystrybutor",
+	ContextMenu_TakeBottleFromDispenser = "Zdejmij butlê z dystrybutora",
+	ContextMenu_PlaceOnDispenser = "W³ó¿ butlê na dystrybutor",
 }
