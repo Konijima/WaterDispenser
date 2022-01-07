@@ -24,6 +24,7 @@ description=- French (FR)
 description=- Spanish (ES)
 description=- Italian (IT)
 description=- Polish (PL) by Insers
+description=- Russian (RU) by youngpirate32
 description=
 description=[h2]My Mods[/h2]
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2688538916]FuelAPI[/url]
