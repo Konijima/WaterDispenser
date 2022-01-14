@@ -1,0 +1,4 @@
+ContextMenu_PTBR = {
+	ContextMenu_TakeBottleFromDispenser = "Pegar galão do bebedouro",
+	ContextMenu_PlaceOnDispenser        = "Colocar galão no bebedouro",
+}

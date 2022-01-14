@@ -1,0 +1,4 @@
+Moveables_PTBR = {
+    Full_Water_Dispenser  = "Bebedouro",
+    Empty_Water_Dispenser = "Bebedouro",
+}
