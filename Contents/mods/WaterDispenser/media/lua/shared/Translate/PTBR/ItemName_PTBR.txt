@@ -1,0 +1,5 @@
+ItemName_PTBR = {
+    ItemName_WaterDispenser.WaterJugEmpty      = "Galão de Água Vazio",
+    ItemName_WaterDispenser.WaterJugWaterFull  = "Galão de Água com Água",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "Galão de Água com Gasolina",
+}
