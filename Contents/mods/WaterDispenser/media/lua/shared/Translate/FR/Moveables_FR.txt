@@ -1,4 +1,4 @@
 Moveables_FR = {
-    Full_Water_Dispenser = "Distributeur d'eau",
-    Empty_Water_Dispenser = "Distributeur d'eau",
+    Full_Water_Dispenser = "Fontaine à eau",
+    Empty_Water_Dispenser = "Fontaine à eau (vide)",
 }
