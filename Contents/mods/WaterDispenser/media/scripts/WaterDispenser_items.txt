@@ -17,7 +17,7 @@ module WaterDispenser {
         WorldStaticModel    = WaterJugEmpty_Ground,
         ReplaceInSecondHand = Bag_WaterJugEmpty_LHand holdingbagleft,
         ReplaceInPrimaryHand= Bag_WaterJugEmpty_RHand holdingbagright,
-        Tags                = CustomFuelContainer; Petrol_WaterDispenser_WaterJugPetrolFull,
+        Tags                = CustomFuelContainer; EmptyFuelContainer; Gasoline_WaterDispenser_WaterJugPetrolFull; Diesel_WaterDispenser_WaterJugDieselFull,
     }
 
     item WaterJugWaterFull
@@ -54,7 +54,7 @@ module WaterDispenser {
         WorldStaticModel    = WaterJugPetrolFull_Ground,
         ReplaceInSecondHand = Bag_WaterJugPetrolFull_LHand holdingbagleft,
         ReplaceInPrimaryHand= Bag_WaterJugPetrolFull_RHand holdingbagright,
-        Tags                = CustomFuelContainer; Empty_WaterDispenser_WaterJugEmpty,
+        Tags                = CustomFuelContainer; FuelType_Gasoline; Empty_WaterDispenser_WaterJugEmpty,
     }
 
 }
