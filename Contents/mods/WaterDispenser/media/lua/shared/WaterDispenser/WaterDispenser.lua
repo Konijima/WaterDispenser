@@ -127,8 +127,8 @@ end
 
 function WaterDispenser:transform(type)
     local objectInfo = WaterDispenser.GetObjectInfo(self.isoObject);
+    self.isoObject:getModData().waterDispenserInfo = objectInfo; -- save info for the disabler mod
     self.isoObject:setSpriteFromName(WaterDispenser.ObjectTypes[type][objectInfo.facing]);
-    ---if isClient() then self.isoObject:transmitUpdatedSpriteToServer(); end
     if isServer() then self.isoObject:transmitUpdatedSpriteToClients(); end
 end
 
@@ -139,6 +139,12 @@ function WaterDispenser:new(isoObject)
     self.__index = self
 
     o.isoObject = isoObject;
+
+    -- Set new mod data table on existing custom dispenser
+    if not o.isoObject:getModData().waterDispenserInfo then
+        o.isoObject:getModData().waterDispenserInfo = WaterDispenser.GetObjectInfo(o.isoObject);
+        if isServer() then o.isoObject:transmitModData(); end
+    end
 
     return o;
 end
