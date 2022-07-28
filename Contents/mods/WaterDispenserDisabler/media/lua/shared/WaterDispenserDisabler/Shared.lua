@@ -1,6 +1,6 @@
 
 if getActivatedMods():contains("WaterDispenser") then
-    print("Water Dispenser Disabler is not running, disable WaterDispenser main mod first!");
+    print("Water Dispenser Disabler is not running, disable WaterDispenser mod first!");
     return;
 end
 
