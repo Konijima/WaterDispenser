@@ -7,13 +7,15 @@ description=- Dispenser have 250 unit of water like the vanilla dispenser.
 description=- Water Jug can be filled with gasoline for a total of 250 units.
 description=- Vanilla Dispenser automatically converted to custom when loaded in the world.
 description=- Dispenser start with random amount of water.
-description=- Time to take and place bottle depend on how the amount of water in it.
+description=- Time to take and place bottle depend on the amount of water in it.
 description=- New disabler mod to revert to vanilla water dispenser.
 description=
 description=[h2]Disable/Revert to vanilla[/h2]
 description=This feature will only work for game 41.72+.
 description=- Enable `WaterDispenserDisabler` mod (keep it enabled) and disable `WaterDispenser` mod.
 description=- When a custom dispenser is found it will revert back to vanilla.
+description=- This mod must be activated alone and kept enabled to revert the custom dispenser back to vanilla.
+description=- Added this disabler mod for people who would want to stop using water dispenser.
 description=
 description=[h2]Languages[/h2]
 description=- English (EN)
@@ -23,9 +25,7 @@ description=- Italian (IT)
 description=- Polish (PL) by Insers
 description=
 description=[h2]My Mods[/h2]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2688538916]FuelAPI[/url]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2687798127]WaterDispenser[/url]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2635550102]Computer[/url]
+description=[url=https://steamcommunity.com/id/konijima/myworkshopfiles/?appid=108600]My Workshop[/url]
 description=
 description=[h3]Github:[/h3]
 description=https://github.com/Konijima/WaterDispenser
