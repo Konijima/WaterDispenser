@@ -1,0 +1,4 @@
+Moveables_RU = {
+    Full_Water_Dispenser = "Кулер для воды",
+    Empty_Water_Dispenser = "Кулер для воды",
+}

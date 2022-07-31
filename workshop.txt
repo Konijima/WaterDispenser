@@ -23,6 +23,7 @@ description=- French (FR)
 description=- Spanish (ES)
 description=- Italian (IT)
 description=- Polish (PL) by Insers
+description=- Russian (RU) by BUGS
 description=
 description=[h2]My Mods[/h2]
 description=[url=https://steamcommunity.com/id/konijima/myworkshopfiles/?appid=108600]My Workshop[/url]
