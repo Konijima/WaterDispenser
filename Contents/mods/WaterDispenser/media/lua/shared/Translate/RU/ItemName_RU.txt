@@ -1,0 +1,5 @@
+ItemName_RU = {
+    ItemName_WaterDispenser.WaterJugEmpty = "Пустая канистра",
+    ItemName_WaterDispenser.WaterJugWaterFull = "Канистра с водой",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "Канистра с бензином",
+}
