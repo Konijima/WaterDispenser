@@ -1,0 +1,4 @@
+ContextMenu_TH = {
+	ContextMenu_TakeBottleFromDispenser = "นำขวดออกจากตู้กดน้ำ",
+	ContextMenu_PlaceOnDispenser = "วางขวดที่ตู้กดน้ำ",
+}

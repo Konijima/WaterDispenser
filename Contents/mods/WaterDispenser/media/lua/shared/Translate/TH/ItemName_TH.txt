@@ -1,0 +1,5 @@
+ItemName_TH = {
+    ItemName_WaterDispenser.WaterJugEmpty = "เหยือกเปล่า",
+    ItemName_WaterDispenser.WaterJugWaterFull = "เหยือกบรรจุน้ำ",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "เหยือกบรรจุน้ำมัน",
+}

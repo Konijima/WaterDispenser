@@ -1,0 +1,4 @@
+Moveables_TH = {
+    Full_Water_Dispenser = "ตู้กดน้ำ",
+    Empty_Water_Dispenser = "ตู้กดน้ำ",
+}
