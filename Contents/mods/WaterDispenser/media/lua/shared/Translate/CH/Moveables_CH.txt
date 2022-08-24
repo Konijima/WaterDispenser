@@ -1,0 +1,4 @@
+Moveables_CH = {
+    Full_Water_Dispenser = "滿的飲水機",
+    Empty_Water_Dispenser = "空的飲水機",
+}
