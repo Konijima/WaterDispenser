@@ -1,5 +1,6 @@
 ItemName_ES = {
-    ItemName_WaterDispenser.WaterJugEmpty = "Jarra de agua vacÃ­a",
+    ItemName_WaterDispenser.WaterJugEmpty = "Jarra de agua vacía",
     ItemName_WaterDispenser.WaterJugWaterFull = "Jarra de agua con agua",
-    ItemName_WaterDispenser.WaterJugPetrolFull = "Jarra de agua con gas",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "Jarra de agua con gasolina",
 }
+
