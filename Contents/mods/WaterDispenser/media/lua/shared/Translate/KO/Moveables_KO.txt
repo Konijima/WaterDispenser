@@ -1,0 +1,4 @@
+Moveables_KO = {
+    Full_Water_Dispenser = "정수기",
+    Empty_Water_Dispenser = "정수기",
+}
