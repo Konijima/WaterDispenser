@@ -1,0 +1,4 @@
+ContextMenu_KO = {
+	ContextMenu_TakeBottleFromDispenser = "정수기에서 물통 꺼내기",
+	ContextMenu_PlaceOnDispenser = "정수기에 물통 끼우기",
+}
