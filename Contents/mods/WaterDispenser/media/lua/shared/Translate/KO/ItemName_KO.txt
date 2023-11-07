@@ -1,0 +1,5 @@
+ItemName_KO = {
+    ItemName_WaterDispenser.WaterJugEmpty = "빈 물통",
+    ItemName_WaterDispenser.WaterJugWaterFull = "물이 든 물통",
+    ItemName_WaterDispenser.WaterJugPetrolFull = "기름이 든 물통",
+}
